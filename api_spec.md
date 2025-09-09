@@ -1,4 +1,255 @@
+# Qdrant Vector Database API Specification
 
+## Overview
+High-performance vector database service for storing and retrieving 512-dimensional vector embeddings with optional GPU acceleration.
+
+## Base URL
+```
+http://localhost:8001/api/v1
+```
+
+## Endpoints
+
+### 1) Add Vector
+- Method: POST
+- Path: `/vectors/add`
+- Request Body:
+```json
+{
+  "embedding": [0.1, 0.2, 0.3, ...],
+  "user_id": "user123",
+  "metadata": {"key": "value"},
+  "point_id": "optional-custom-id"
+}
+```
+- Response (200):
+```json
+{
+  "success": true,
+  "message": "Vector added successfully",
+  "timestamp": 1725900000.0,
+  "point_id": "generated-or-provided-id"
+}
+```
+
+### 2) Add Vectors (Batch)
+- Method: POST
+- Path: `/vectors/add_batch`
+- Request Body:
+```json
+{
+  "embeddings": [[0.1, 0.2, ...], [0.3, 0.4, ...]],
+  "user_ids": ["user1", "user2"],
+  "metadata_list": [{"group": "A"}, {"group": "B"}],
+  "point_ids": ["id1", "id2"]
+}
+```
+- Response (200):
+```json
+{
+  "success": true,
+  "message": "Successfully added 2 vectors",
+  "timestamp": 1725900000.0,
+  "point_ids": ["id1", "id2"],
+  "added_count": 2
+}
+```
+
+### 3) Search Vectors
+- Method: POST
+- Path: `/vectors/search`
+- Request Body:
+```json
+{
+  "embedding": [0.1, 0.2, ...],
+  "k": 10,
+  "threshold": 0.65,
+  "user_filter": "user123"
+}
+```
+- Response (200):
+```json
+{
+  "success": true,
+  "message": "Found 3 similar vectors",
+  "timestamp": 1725900000.0,
+  "results": [
+    {
+      "id": "point-id",
+      "score": 0.95,
+      "user_id": "user123",
+      "metadata": {"key": "value"},
+      "timestamp": 1725900000.0
+    }
+  ],
+  "query_time_ms": 12.34,
+  "total_results": 3
+}
+```
+
+### 4) Delete Vector
+- Method: DELETE
+- Path: `/vectors/{point_id}`
+- Response (200):
+```json
+{
+  "success": true,
+  "message": "Vector <point_id> deleted",
+  "timestamp": 1725900000.0,
+  "deleted": true
+}
+```
+
+### 5) Delete All Vectors for a User
+- Method: DELETE
+- Path: `/vectors/user/{user_id}`
+- Response (200):
+```json
+{
+  "success": true,
+  "message": "Deleted N vectors for user <user_id>",
+  "timestamp": 1725900000.0,
+  "deleted_count": 42
+}
+```
+
+### 6) Health Check
+- Method: GET
+- Path: `/health`
+- Response (200):
+```json
+{
+  "success": true,
+  "status": "healthy",
+  "qdrant_connection": true,
+  "collection_exists": true,
+  "collection_name": "face_embeddings",
+  "gpu_available": true,
+  "message": "Service is healthy",
+  "timestamp": 1725900000.0
+}
+```
+
+### 7) Statistics
+- Method: GET
+- Path: `/stats`
+- Response (200):
+```json
+{
+  "success": true,
+  "message": "Statistics retrieved successfully",
+  "timestamp": 1725900000.0,
+  "collection_info": {"vector_count": 1000},
+  "performance_stats": {"avg_search_time_ms": 15.2},
+  "gpu_info": {"available": true}
+}
+```
+
+### 8) Service Info
+- Method: GET
+- Path: `/info`
+- Response (200):
+```json
+{
+  "service_name": "Qdrant Vector Database Service",
+  "version": "1.0.0",
+  "description": "High-performance GPU-accelerated vector database service",
+  "configuration": {
+    "vector_dimension": 512,
+    "similarity_metric": "Cosine",
+    "similarity_threshold": 0.65,
+    "collection_name": "face_embeddings",
+    "gpu_enabled": true,
+    "cuda_available": true,
+    "batch_size": 128
+  },
+  "endpoints": {
+    "vectors": [
+      "/vectors/add",
+      "/vectors/add_batch",
+      "/vectors/search",
+      "/vectors/{point_id}",
+      "/vectors/user/{user_id}"
+    ],
+    "system": [
+      "/health",
+      "/stats",
+      "/info"
+    ]
+  },
+  "timestamp": 1725900000.0
+}
+```
+
+## Schemas (Summarized)
+
+### AddVectorRequest
+- `embedding`: List[float] (512-dim)
+- `user_id`: str
+- `metadata`: Dict[str, Any] (optional)
+- `point_id`: str (optional)
+
+### AddVectorResponse
+- Inherits `BaseResponse`
+- `point_id`: str
+
+### AddVectorsBatchRequest
+- `embeddings`: List[List[float]]
+- `user_ids`: List[str]
+- `metadata_list`: List[Dict[str, Any]] (optional)
+- `point_ids`: List[str] (optional)
+
+### AddVectorsBatchResponse
+- Inherits `BaseResponse`
+- `point_ids`: List[str]
+- `added_count`: int
+
+### SearchRequest
+- `embedding`: List[float]
+- `k`: int (1-100)
+- `threshold`: float (0.0-1.0, optional)
+- `user_filter`: str (optional)
+
+### SearchResponse
+- Inherits `BaseResponse`
+- `results`: List[SearchResult]
+- `query_time_ms`: float
+- `total_results`: int
+
+### SearchResult
+- `id`: str
+- `score`: float
+- `user_id`: str
+- `metadata`: Dict[str, Any]
+- `timestamp`: float (optional)
+
+### DeleteVectorResponse
+- Inherits `BaseResponse`
+- `deleted`: bool
+
+### DeleteUserVectorsResponse
+- Inherits `BaseResponse`
+- `deleted_count`: int
+
+### StatsResponse
+- Inherits `BaseResponse`
+- `collection_info`: Dict[str, Any]
+- `performance_stats`: Dict[str, Any]
+- `gpu_info`: Dict[str, Any]
+
+### HealthCheckResponse
+- Inherits `BaseResponse`
+- `status`: str
+- `qdrant_connection`: bool
+- `collection_exists`: bool
+- `collection_name`: str
+- `gpu_available`: bool
+
+## Notes
+- API prefix is `/api/v1` (see `src/main.py`).
+- Default `collection_name` is `face_embeddings` (see `src/config/settings.py`).
+- Default vector dimension is 512 (`settings.vector_size`).
+- Responses include `timestamp` where set by endpoints via `BaseResponse`.
 
 Below is a concise, ready-to-use API specification you can import into tools like Postman/Insomnia or generate clients from. It reflects the implemented FastAPI endpoints in your codebase:
 
