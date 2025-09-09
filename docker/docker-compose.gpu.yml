@@ -1,0 +1,147 @@
+services:
+  qdrant-gpu:
+    image: qdrant/qdrant:gpu-nvidia-latest
+    container_name: qdrant_gpu_optimized
+    ports:
+      - "6333:6333"  # REST API
+      - "6334:6334"  # gRPC API
+    volumes:
+      - ./qdrant_storage:/qdrant/storage
+      - ./qdrant_config:/qdrant/config
+    environment:
+      - QDRANT__SERVICE__HTTP_PORT=6333
+      - QDRANT__SERVICE__GRPC_PORT=6334
+      - QDRANT__LOG_LEVEL=INFO
+      # GPU Indexing Enable
+      - QDRANT__GPU__INDEXING=1
+      # GPU Optimization Settings
+      - QDRANT__SERVICE__MAX_REQUEST_SIZE_MB=64
+      - QDRANT__SERVICE__MAX_WORKERS=0  # Auto-detect CPU cores
+      - QDRANT__STORAGE__PERFORMANCE__MAX_SEARCH_THREADS=0
+      # Memory Management for 10M+ vectors
+      - QDRANT__STORAGE__OPTIMIZERS__DEFAULT_SEGMENT_NUMBER=0
+      - QDRANT__STORAGE__OPTIMIZERS__MAX_SEGMENT_SIZE_KB=524288  # 512MB segments
+      - QDRANT__STORAGE__OPTIMIZERS__MEMMAP_THRESHOLD_KB=1048576  # 1GB mmap threshold
+      - QDRANT__STORAGE__OPTIMIZERS__INDEXING_THRESHOLD=50000
+      - QDRANT__STORAGE__OPTIMIZERS__FLUSH_INTERVAL_SEC=1
+      - QDRANT__STORAGE__OPTIMIZERS__MAX_OPTIMIZATION_THREADS=0
+      # HNSW Optimization for large scale
+      - QDRANT__STORAGE__HNSW__M=64
+      - QDRANT__STORAGE__HNSW__EF_CONSTRUCT=512
+      - QDRANT__STORAGE__HNSW__FULL_SCAN_THRESHOLD=20000
+      - QDRANT__STORAGE__HNSW__MAX_INDEXING_THREADS=0
+      # Quantization for memory efficiency
+      - QDRANT__STORAGE__QUANTIZATION__ALWAYS_RAM=true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:6333/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  face-recognition-service:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.gpu
+    container_name: face_recognition_gpu
+    ports:
+      - "8001:8001"  # FastAPI
+      - "8002:8002"  # Metrics
+    volumes:
+      - ../src:/app/src
+      - ../logs:/app/logs
+    environment:
+      # Qdrant Connection
+      - QDRANT_QDRANT_HOST=qdrant-gpu
+      - QDRANT_QDRANT_PORT=6333
+      - QDRANT_QDRANT_GRPC_PORT=6334
+      - QDRANT_COLLECTION_NAME=face_embeddings_optimized
+      
+      # Performance Optimization
+      - QDRANT_HNSW_EF_CONSTRUCT=512
+      - QDRANT_HNSW_M=64
+      - QDRANT_HNSW_EF=256
+      - QDRANT_QUANTIZATION_ENABLED=true
+      - QDRANT_QUANTIZATION_TYPE=int8
+      - QDRANT_SIMILARITY_THRESHOLD=0.65
+      
+      # GPU Configuration
+      - QDRANT_USE_GPU=true
+      - QDRANT_GPU_DEVICE_ID=0
+      - QDRANT_GPU_MEMORY_FRACTION=0.8
+      - QDRANT_ENABLE_CUDA_GRAPHS=true
+      
+      # High Performance Settings
+      - QDRANT_BATCH_SIZE=128
+      - QDRANT_SEARCH_TIMEOUT=0.1
+      - QDRANT_MAX_CONCURRENT_REQUESTS=1000
+      # QDRANT_INDEXING_THRESHOLD already set in Qdrant service config
+      
+      # Logging
+      - QDRANT_LOG_LEVEL=INFO
+      - QDRANT_LOG_FORMAT=json
+    depends_on:
+      qdrant-gpu:
+        condition: service_healthy
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/api/v1/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 60s
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus_monitoring
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana_dashboard
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin123
+      - GF_USERS_ALLOW_SIGN_UP=false
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+
+volumes:
+  prometheus_data:
+  grafana_data:
+
+networks:
+  default:
+    name: face_recognition_network

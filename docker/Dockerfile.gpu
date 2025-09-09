@@ -1,0 +1,70 @@
+# GPU-enabled Dockerfile for Qdrant Vector Database Service
+FROM nvidia/cuda:12.1-devel-ubuntu22.04
+
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    python3.11 \
+    python3.11-pip \
+    python3.11-dev \
+    python3.11-venv \
+    build-essential \
+    curl \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create symbolic link for python
+RUN ln -s /usr/bin/python3.11 /usr/bin/python
+
+# Set working directory
+WORKDIR /app
+
+# Create logs directory
+RUN mkdir -p /app/logs
+
+# Copy requirements first for better caching
+COPY requirements.txt .
+COPY pyproject.toml .
+
+# Upgrade pip and install Python dependencies
+RUN python -m pip install --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application source code
+COPY src/ /app/src/
+COPY README.md /app/
+
+# GPU optimization environment variables
+ENV CUDA_VISIBLE_DEVICES=0
+ENV NVIDIA_VISIBLE_DEVICES=all
+ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility
+ENV CUDA_LAUNCH_BLOCKING=0
+
+# Qdrant service configuration
+ENV QDRANT_HOST=qdrant
+ENV QDRANT_PORT=6333
+ENV QDRANT_GRPC_PORT=6334
+ENV QDRANT_USE_GPU=true
+ENV QDRANT_GPU_DEVICE_ID=0
+ENV QDRANT_GPU_MEMORY_FRACTION=0.8
+ENV QDRANT_LOG_LEVEL=INFO
+ENV QDRANT_LOG_FORMAT=json
+
+# Create non-root user for security
+RUN groupadd -r qdrant && useradd -r -g qdrant qdrant
+RUN chown -R qdrant:qdrant /app
+USER qdrant
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
+    CMD curl -f http://localhost:8001/health || exit 1
+
+# Expose ports
+EXPOSE 8001 8002
+
+# Start command
+CMD ["python", "-m", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8001", "--workers", "1"]

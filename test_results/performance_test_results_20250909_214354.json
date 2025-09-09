@@ -1,0 +1,1217 @@
+{
+  "test_config": {
+    "num_vectors": 500,
+    "num_users": 50,
+    "batch_size": 16,
+    "search_queries": 50,
+    "timestamp": "2025-09-09T21:43:44.374904"
+  },
+  "add_operations": [
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 332.61880000009114,
+      "point_id": "014c8bf6-02e7-4cd0-9ed2-9fb4788be03b"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 9.189899999910267,
+      "point_id": "9c09e28e-2f89-4497-bc47-f748183db37e"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 33.3491999999751,
+      "point_id": "fc7af4c3-3399-4866-95a1-208c146a6ab3"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 31.36739999990823,
+      "point_id": "f818d49e-e6fc-417f-b628-7caecd31555b"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 31.300200000259792,
+      "point_id": "a681ebda-4855-4a93-af38-d2cbf32f9a50"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 30.56650000053196,
+      "point_id": "c5a04fbb-4d14-4143-ba9d-dc4f38b6a97e"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 9.817500000281143,
+      "point_id": "f2e688cd-0853-4848-8e18-f0b48b670861"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 8.943300000282761,
+      "point_id": "b822387f-a603-4c0a-b7a2-efcf55101d17"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 23.94040000035602,
+      "point_id": "be76a28c-633e-47f8-9aca-924b63ca99ae"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.5798999994513,
+      "point_id": "8a10e80c-1f05-44ba-961f-24c0c7a08c1f"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 25.43470000000525,
+      "point_id": "32c2ce7d-ce7b-406c-b875-635b4cfcd11d"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 30.997699999716133,
+      "point_id": "8e89e3ba-290b-4f38-b7df-2fed21aa39c0"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 7.607000000461994,
+      "point_id": "df8fa239-4c7f-4eaa-afd0-6604a40785be"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 22.403400000257534,
+      "point_id": "ffa6c013-8b7d-42c6-9220-9971d92c81b8"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 31.38530000069295,
+      "point_id": "70d05902-1386-4a42-83c5-dac51e8a0358"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 29.150599999411497,
+      "point_id": "8c1924fc-ff05-4bb7-a3e5-a78d5cc4f289"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 7.461399999556306,
+      "point_id": "049ee3e9-56f2-4920-a9ce-b4a5a7249327"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 8.236600000600447,
+      "point_id": "4496a082-4e32-49a0-b17f-0656daa10b94"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 28.889799999888055,
+      "point_id": "226248d6-9659-4866-82c2-29d77d67cfd1"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.671199999800592,
+      "point_id": "e19d58ef-5b78-4c06-84e1-32a1e7fa791b"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 24.225299999670824,
+      "point_id": "d248161a-ca45-44fb-8f06-a4c26c15590a"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.480500000179745,
+      "point_id": "b675e502-e880-4f1a-a8ca-445bdcbba2d0"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.900100000166276,
+      "point_id": "589c0450-bd3c-43d7-9f9a-a59032cc9a2a"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 16.43679999961023,
+      "point_id": "9a38be8d-47ef-4d95-9cf3-7277b621536e"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 32.4228999998013,
+      "point_id": "678e3a3e-6e13-49b2-be82-c29a64f90673"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 7.573900000352296,
+      "point_id": "4acd4530-1754-46f2-b028-9d79f262beee"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 21.093399999699614,
+      "point_id": "94270492-3d1c-4900-bd50-2fc6d789686d"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 33.17380000044068,
+      "point_id": "a07c4968-3ded-4b16-9f07-a760522dfe7a"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 32.1245999994062,
+      "point_id": "86f6eaa0-84a0-4882-90ec-e083c3a1dd4c"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 29.762200000732264,
+      "point_id": "d15a0b45-b21d-424f-88f4-874ad6660873"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 8.058299999902374,
+      "point_id": "38308dc9-e59d-4689-9285-7792cc062266"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.526399999529531,
+      "point_id": "dd683f1d-56eb-4294-9946-0286c88d36dc"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.293699999332603,
+      "point_id": "86b7abad-abfc-439e-b767-5b12dfdd16e0"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.22780000048806,
+      "point_id": "83e53ea0-328e-44b6-83ed-c33893678d3b"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 16.350599999896076,
+      "point_id": "91fce310-a919-4128-8a4a-fce4cddad8ca"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 8.461999999781256,
+      "point_id": "07521bd9-2e28-4886-8e94-03ec6f091f33"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 23.405799999636656,
+      "point_id": "932ff955-98c4-430e-bd5b-f5f85a7c3d61"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 33.7840000001961,
+      "point_id": "301d33dd-86be-4103-b9dc-5e1b2f3b8081"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 32.28450000005978,
+      "point_id": "eed40f4e-bc4e-4004-a1d7-21ee0c1953d2"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 29.434800000672112,
+      "point_id": "65058789-5645-4243-a7f6-1dbc87d32433"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.694499999866821,
+      "point_id": "04088a23-58a1-4aa9-9bb2-528fd6f889e1"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 22.13339999980235,
+      "point_id": "a2e9b1bf-0714-4413-8cea-3a23ba9d808f"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 33.416899999792804,
+      "point_id": "4bc90144-120f-4f03-a2c3-b8d4442ff040"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 26.845999999750347,
+      "point_id": "885ed92c-3193-43b8-8c23-1275cec86be1"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 31.82829999968817,
+      "point_id": "7aea967a-29e5-4de8-83e5-0fc8fd9b7bb6"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 31.947000000400294,
+      "point_id": "e21c13aa-5a47-4db4-8251-63cd64395db0"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.37280000046303,
+      "point_id": "1bde39db-f886-4721-8e23-6dde7b3a4411"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 26.337999999668682,
+      "point_id": "4699f389-f25f-49cb-8320-ce1896d3dfdb"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 28.840300000410934,
+      "point_id": "242cd296-7dc6-4387-a605-df3cce0aef86"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.511700000373821,
+      "point_id": "2d14b1f6-0f00-4de6-ab6b-50b64b6338a3"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 23.34530000007362,
+      "point_id": "3767c345-148a-405e-83e0-0fd324c79537"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.691499999760708,
+      "point_id": "fe27e272-78c8-45aa-baef-1a15397c1355"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 25.042200000825687,
+      "point_id": "9154739f-5251-475b-9c56-e44a095cec84"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 31.124900000577327,
+      "point_id": "4e5a557b-e1db-4b93-ac9b-a1ab47cff5dd"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 7.275099999787926,
+      "point_id": "cbe802b9-9ffe-410b-8cb6-f78f2ab9e552"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.475899999713874,
+      "point_id": "c7190caf-4e51-455b-afbf-32f933fdcd97"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 33.27960000024177,
+      "point_id": "c6f4d8ce-2171-4fa5-88de-a698bfe51f1f"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 30.42749999985972,
+      "point_id": "92dc6082-5df9-44fb-ba3e-1a70095a287a"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 30.40540000074543,
+      "point_id": "972b6f7f-9ca7-4117-bf9a-d3f6b6200dc3"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 29.813799999828916,
+      "point_id": "4335f8da-05e8-40e4-a395-8242c70d8a55"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 29.545000000325672,
+      "point_id": "35680783-fc2e-4271-bd6d-129592957ae9"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 7.741400000668364,
+      "point_id": "fbd5801b-3e77-4cc8-89d6-bd60b0707329"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.424000000151864,
+      "point_id": "fa99598c-cb02-4ca8-b628-8f9d28394e33"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.686499999887019,
+      "point_id": "7795d4a0-324b-45da-8211-0777b0152451"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 23.92839999993157,
+      "point_id": "bae34124-e257-44f1-a8a4-db98da0b2f02"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.70669999999518,
+      "point_id": "56b2683f-f2ff-458d-bae6-a7a67e5a7f4c"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 24.538000000575266,
+      "point_id": "ad45b03b-196a-4e17-91f0-d4253afcd650"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 34.27860000010696,
+      "point_id": "b32cef28-563f-4a9d-bcfb-0e8b3a38b1c7"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 27.696399999513233,
+      "point_id": "435b9f4c-b8f9-4c0f-9710-aa6436869600"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 32.01269999954093,
+      "point_id": "b364ada4-9479-49e0-925c-4b212b7f8e06"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 29.710200000408804,
+      "point_id": "5d1459d3-17ad-4d9e-bee4-1eb397ba45bd"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 32.863400000678666,
+      "point_id": "72f2448c-cdd5-40ee-8f86-57c3a6c646c9"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 9.349400000246533,
+      "point_id": "c47abf95-7623-4461-b077-96f31f742bec"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.599800000003597,
+      "point_id": "728e678c-bd99-4212-a722-8bbbead6e914"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 25.99469999950088,
+      "point_id": "e1cc3a92-413e-438d-b871-7a27827f2437"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 31.094400000256428,
+      "point_id": "525b90fa-0272-4303-ba53-0e888ebbecea"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 31.271200000446697,
+      "point_id": "28680834-240c-46ea-84bc-8f873d0123a0"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 31.89860000020417,
+      "point_id": "a272c4d6-3c38-4aa4-b78e-6c2b5e63d6b7"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 30.277800000476418,
+      "point_id": "3f8522a2-4d96-458c-b478-8d88e5339ad6"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 32.41309999975783,
+      "point_id": "fdcf15ae-48e5-4951-bb2a-4b8092068600"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.736899999850721,
+      "point_id": "927dd4b4-5b2c-428f-afd8-b03341e27bdd"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 23.338399999374815,
+      "point_id": "3cac6148-94f8-41a9-8318-15e3d18f08d6"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.826300000284391,
+      "point_id": "ec60179e-a6f7-4f91-9784-61f92df52a7c"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 24.78289999999106,
+      "point_id": "b37792df-ad35-4f11-afac-7429be4a973b"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 7.390700000541983,
+      "point_id": "22fa020c-d1b2-486a-afd8-fd96b4304587"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 24.19929999996384,
+      "point_id": "58f604c2-4802-4a07-9956-021048e6d1cc"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 7.496200000787212,
+      "point_id": "bd93b301-d57d-4969-b8ab-078f6cbdc9ff"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.326200000330573,
+      "point_id": "3e2ab6c6-a8c8-4502-b640-6ec8c0af3698"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 30.731899999409507,
+      "point_id": "56ffcb81-5652-48e6-81a4-a430295e262e"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.372599999849626,
+      "point_id": "f7a67b8f-84c4-47a2-9e3b-b89fff28830a"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 23.539400000117894,
+      "point_id": "8e8c866c-812b-46a3-b8f4-e1c5d6fe97c2"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.334400000014284,
+      "point_id": "313cff3d-afc5-4485-822a-f83188afcfe5"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.334599999718193,
+      "point_id": "1fec9389-34b3-472a-8d19-7340f95f4eb1"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 18.460700000105135,
+      "point_id": "76cfe8cd-d426-4bf2-939b-0847fa447b0d"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 8.508300000357849,
+      "point_id": "3a9ae388-7009-4ae5-a3ff-b4c6196a0ceb"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 6.964899999729823,
+      "point_id": "36f647b5-b2e6-43e9-8903-0f6785db9536"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 16.49710000037885,
+      "point_id": "309e0f4b-8fb0-4d22-91d6-7ace2346bd15"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 30.619000000115193,
+      "point_id": "889e8001-1a36-4343-84af-b6bed3967fc9"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 32.55609999996523,
+      "point_id": "d1d7d733-3c55-493e-9355-d1872bfffddd"
+    },
+    {
+      "operation": "single_add",
+      "success": true,
+      "duration_ms": 30.508900000313588,
+      "point_id": "e038ac84-99e3-4e85-93c1-a0fc9cc70713"
+    }
+  ],
+  "search_operations": [],
+  "delete_operations": [
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 30.745500000193715,
+      "point_id": "014c8bf6-02e7-4cd0-9ed2-9fb4788be03b"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 25.081300000238116,
+      "point_id": "9c09e28e-2f89-4497-bc47-f748183db37e"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 33.58060000027763,
+      "point_id": "fc7af4c3-3399-4866-95a1-208c146a6ab3"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 30.025900000509864,
+      "point_id": "f818d49e-e6fc-417f-b628-7caecd31555b"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 32.329200000276614,
+      "point_id": "a681ebda-4855-4a93-af38-d2cbf32f9a50"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 6.767899999431393,
+      "point_id": "c5a04fbb-4d14-4143-ba9d-dc4f38b6a97e"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 30.633299999863084,
+      "point_id": "f2e688cd-0853-4848-8e18-f0b48b670861"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 14.641900000242458,
+      "point_id": "b822387f-a603-4c0a-b7a2-efcf55101d17"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 5.244899999524932,
+      "point_id": "be76a28c-633e-47f8-9aca-924b63ca99ae"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 25.95999999994092,
+      "point_id": "8a10e80c-1f05-44ba-961f-24c0c7a08c1f"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 15.303899999707937,
+      "point_id": "32c2ce7d-ce7b-406c-b875-635b4cfcd11d"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 15.15670000026148,
+      "point_id": "8e89e3ba-290b-4f38-b7df-2fed21aa39c0"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 16.35309999983292,
+      "point_id": "df8fa239-4c7f-4eaa-afd0-6604a40785be"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 15.486500000406522,
+      "point_id": "ffa6c013-8b7d-42c6-9220-9971d92c81b8"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 15.488099999856786,
+      "point_id": "70d05902-1386-4a42-83c5-dac51e8a0358"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 16.436200000498502,
+      "point_id": "8c1924fc-ff05-4bb7-a3e5-a78d5cc4f289"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 14.98500000070635,
+      "point_id": "049ee3e9-56f2-4920-a9ce-b4a5a7249327"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 16.071900000497408,
+      "point_id": "4496a082-4e32-49a0-b17f-0656daa10b94"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 23.268300000381714,
+      "point_id": "226248d6-9659-4866-82c2-29d77d67cfd1"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 5.684600000677165,
+      "point_id": "e19d58ef-5b78-4c06-84e1-32a1e7fa791b"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 16.82359999995242,
+      "point_id": "d248161a-ca45-44fb-8f06-a4c26c15590a"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 21.10739999989164,
+      "point_id": "b675e502-e880-4f1a-a8ca-445bdcbba2d0"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 35.933800000748306,
+      "point_id": "589c0450-bd3c-43d7-9f9a-a59032cc9a2a"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 31.27649999987625,
+      "point_id": "9a38be8d-47ef-4d95-9cf3-7277b621536e"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 31.702299999778916,
+      "point_id": "678e3a3e-6e13-49b2-be82-c29a64f90673"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 30.85209999971994,
+      "point_id": "4acd4530-1754-46f2-b028-9d79f262beee"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 6.964500000322005,
+      "point_id": "94270492-3d1c-4900-bd50-2fc6d789686d"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 36.04489999997895,
+      "point_id": "a07c4968-3ded-4b16-9f07-a760522dfe7a"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 5.138200000146753,
+      "point_id": "86f6eaa0-84a0-4882-90ec-e083c3a1dd4c"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 4.974299999958021,
+      "point_id": "d15a0b45-b21d-424f-88f4-874ad6660873"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 33.10990000045422,
+      "point_id": "38308dc9-e59d-4689-9285-7792cc062266"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 34.355499999946915,
+      "point_id": "dd683f1d-56eb-4294-9946-0286c88d36dc"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 6.338299999697483,
+      "point_id": "86b7abad-abfc-439e-b767-5b12dfdd16e0"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 16.3990000000922,
+      "point_id": "83e53ea0-328e-44b6-83ed-c33893678d3b"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 20.3600999993796,
+      "point_id": "91fce310-a919-4128-8a4a-fce4cddad8ca"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 33.6472999997568,
+      "point_id": "07521bd9-2e28-4886-8e94-03ec6f091f33"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 28.93690000018978,
+      "point_id": "932ff955-98c4-430e-bd5b-f5f85a7c3d61"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 23.80639999955747,
+      "point_id": "301d33dd-86be-4103-b9dc-5e1b2f3b8081"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 15.144499999223626,
+      "point_id": "eed40f4e-bc4e-4004-a1d7-21ee0c1953d2"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 15.258499999617925,
+      "point_id": "65058789-5645-4243-a7f6-1dbc87d32433"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 15.630099999725644,
+      "point_id": "04088a23-58a1-4aa9-9bb2-528fd6f889e1"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 15.442500000062864,
+      "point_id": "a2e9b1bf-0714-4413-8cea-3a23ba9d808f"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 15.471099999558646,
+      "point_id": "4bc90144-120f-4f03-a2c3-b8d4442ff040"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 15.218499999718915,
+      "point_id": "885ed92c-3193-43b8-8c23-1275cec86be1"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 15.19670000016049,
+      "point_id": "7aea967a-29e5-4de8-83e5-0fc8fd9b7bb6"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 5.07720000041445,
+      "point_id": "e21c13aa-5a47-4db4-8251-63cd64395db0"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 26.625999999851047,
+      "point_id": "1bde39db-f886-4721-8e23-6dde7b3a4411"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 5.777899999884539,
+      "point_id": "4699f389-f25f-49cb-8320-ce1896d3dfdb"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 5.108800000016345,
+      "point_id": "242cd296-7dc6-4387-a605-df3cce0aef86"
+    },
+    {
+      "operation": "single_delete",
+      "success": true,
+      "duration_ms": 17.746299999998882,
+      "point_id": "2d14b1f6-0f00-4de6-ab6b-50b64b6338a3"
+    },
+    {
+      "operation": "user_delete",
+      "success": true,
+      "duration_ms": 16.784099999313185,
+      "user_id": "test_user_0",
+      "deleted_count": 175
+    },
+    {
+      "operation": "user_delete",
+      "success": true,
+      "duration_ms": 5.183199999919452,
+      "user_id": "test_user_1",
+      "deleted_count": 176
+    },
+    {
+      "operation": "user_delete",
+      "success": true,
+      "duration_ms": 5.30590000016673,
+      "user_id": "test_user_2",
+      "deleted_count": 177
+    },
+    {
+      "operation": "user_delete",
+      "success": true,
+      "duration_ms": 4.947600000377861,
+      "user_id": "test_user_3",
+      "deleted_count": 178
+    },
+    {
+      "operation": "user_delete",
+      "success": true,
+      "duration_ms": 27.99830000003567,
+      "user_id": "test_user_4",
+      "deleted_count": 179
+    },
+    {
+      "operation": "user_delete",
+      "success": true,
+      "duration_ms": 15.83810000010999,
+      "user_id": "test_user_5",
+      "deleted_count": 180
+    },
+    {
+      "operation": "user_delete",
+      "success": true,
+      "duration_ms": 14.747800000805,
+      "user_id": "test_user_6",
+      "deleted_count": 181
+    },
+    {
+      "operation": "user_delete",
+      "success": true,
+      "duration_ms": 15.840600000046834,
+      "user_id": "test_user_7",
+      "deleted_count": 182
+    },
+    {
+      "operation": "user_delete",
+      "success": true,
+      "duration_ms": 31.351599999652535,
+      "user_id": "test_user_8",
+      "deleted_count": 183
+    },
+    {
+      "operation": "user_delete",
+      "success": true,
+      "duration_ms": 5.173800000193296,
+      "user_id": "test_user_9",
+      "deleted_count": 184
+    }
+  ],
+  "batch_operations": [
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 2863.44150000059,
+      "batch_size": 16,
+      "vectors_per_second": 5.587681815743993
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 40.865900000426336,
+      "batch_size": 16,
+      "vectors_per_second": 391.52447394607924
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 36.34499999952823,
+      "batch_size": 16,
+      "vectors_per_second": 440.2256156337237
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 16.83809999940422,
+      "batch_size": 16,
+      "vectors_per_second": 950.2259756484475
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 42.929999999614665,
+      "batch_size": 16,
+      "vectors_per_second": 372.69974377227146
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 19.096200000603858,
+      "batch_size": 16,
+      "vectors_per_second": 837.8630303146201
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 16.60569999967265,
+      "batch_size": 16,
+      "vectors_per_second": 963.5245729066169
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 40.15220000019326,
+      "batch_size": 16,
+      "vectors_per_second": 398.48376925605544
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 30.23230000053445,
+      "batch_size": 16,
+      "vectors_per_second": 529.2352880765654
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 16.12710000063089,
+      "batch_size": 16,
+      "vectors_per_second": 992.118855800118
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 28.597399999853224,
+      "batch_size": 16,
+      "vectors_per_second": 559.4914223000035
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 32.493699999577075,
+      "batch_size": 16,
+      "vectors_per_second": 492.4031427694676
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 28.502000000116823,
+      "batch_size": 16,
+      "vectors_per_second": 561.3641147966606
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 30.67159999955038,
+      "batch_size": 16,
+      "vectors_per_second": 521.6552119952838
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 19.075299999713025,
+      "batch_size": 16,
+      "vectors_per_second": 838.7810414641295
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 42.45630000059464,
+      "batch_size": 16,
+      "vectors_per_second": 376.85808701596477
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 29.937799999970593,
+      "batch_size": 16,
+      "vectors_per_second": 534.4414085208571
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 18.907900000158406,
+      "batch_size": 16,
+      "vectors_per_second": 846.2071409234212
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 16.370000000279106,
+      "batch_size": 16,
+      "vectors_per_second": 977.3976786638486
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 40.158200000405486,
+      "batch_size": 16,
+      "vectors_per_second": 398.4242321577771
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 29.987099999743805,
+      "batch_size": 16,
+      "vectors_per_second": 533.5627653269805
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 83.1343999998353,
+      "batch_size": 16,
+      "vectors_per_second": 192.45943917357556
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 21.835300000020652,
+      "batch_size": 16,
+      "vectors_per_second": 732.7584232863696
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 24.542699999983597,
+      "batch_size": 16,
+      "vectors_per_second": 651.925012325893
+    },
+    {
+      "operation": "batch_add",
+      "success": true,
+      "duration_ms": 25.374800000463438,
+      "batch_size": 16,
+      "vectors_per_second": 630.5468417369902
+    }
+  ],
+  "summary": {
+    "single_add_stats": {
+      "count": 100,
+      "min_ms": 6.22780000048806,
+      "max_ms": 332.61880000009114,
+      "mean_ms": 23.272974000065005,
+      "median_ms": 23.934400000143796,
+      "std_dev_ms": 33.07786274596225,
+      "p95_ms": 33.28308000022844,
+      "p99_ms": 37.26200200010833
+    },
+    "batch_add_stats": {
+      "count": 25,
+      "min_ms": 16.12710000063089,
+      "max_ms": 2863.44150000059,
+      "mean_ms": 143.78714000005857,
+      "median_ms": 29.937799999970593,
+      "std_dev_ms": 566.7683986319984,
+      "p95_ms": 75.09351999979106,
+      "p99_ms": 2196.1677960004035
+    },
+    "search_stats": {
+      "count": 0
+    },
+    "similar_search_stats": {
+      "count": 0
+    },
+    "delete_stats": {
+      "count": 50,
+      "min_ms": 4.974299999958021,
+      "max_ms": 36.04489999997895,
+      "mean_ms": 19.49427800002013,
+      "median_ms": 16.37604999996256,
+      "std_dev_ms": 9.8264791200308,
+      "p95_ms": 34.03680999986136,
+      "p99_ms": 35.990461000355936
+    },
+    "user_delete_stats": {
+      "count": 10,
+      "min_ms": 4.947600000377861,
+      "max_ms": 31.351599999652535,
+      "mean_ms": 14.317100000062055,
+      "median_ms": 15.292950000457495,
+      "std_dev_ms": 9.570050668592044,
+      "p95_ms": 29.842614999824942,
+      "p99_ms": 31.049802999687017
+    },
+    "total_operations": {
+      "single_adds": 100,
+      "batch_adds": 25,
+      "searches": 0,
+      "similar_searches": 0,
+      "deletes": 50,
+      "user_deletes": 10
+    }
+  }
+}
